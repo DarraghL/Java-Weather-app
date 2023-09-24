@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane prefHeight="869.0" prefWidth="1380.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.ConnaughtMenuController">
+<StackPane prefHeight="869.0" prefWidth="1380.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.ConnachtMenuController">
 
 
 </StackPane>

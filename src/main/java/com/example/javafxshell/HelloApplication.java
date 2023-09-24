@@ -21,21 +21,26 @@ public class HelloApplication extends Application {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
-            HelloController controller = fxmlLoader.getController();
-            controller.setApplication(this);  // This line is important
             stage.setTitle("Main Menu");
             stage.setScene(scene);
             stage.show();
+
+            HelloController controller = fxmlLoader.getController();
+            if (controller != null) {
+                controller.setStage(stage);
+            } else {
+                System.err.println("Controller is null");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void showConnaughtMenu() {
+    public void showConnachtMenu() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("connaughtMenu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("connachtMenu.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("Connaught Menu");
+            stage.setTitle("Connacht Menu");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

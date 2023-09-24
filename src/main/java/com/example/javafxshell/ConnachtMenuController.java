@@ -3,7 +3,7 @@ package com.example.javafxshell;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class ConnaughtMenuController {
+public class ConnachtMenuController {
 
     private HelloApplication application;
 
