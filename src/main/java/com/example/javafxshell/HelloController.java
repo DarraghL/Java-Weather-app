@@ -14,11 +14,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.io.File;
+import java.net.URL;
 
 public class HelloController {
-
     private Stage stage;
+    private HelloApplication application;
+    private SoundHandler soundHandler;
+
+    public void setApplication(HelloApplication application) {
+        this.application = application;
+    }
 
     @FXML
     private ImageView ulsterImageView, munsterImageView, leinsterImageView, connachtImageView,
@@ -32,8 +37,8 @@ public class HelloController {
     @FXML
     public void initialize() {
         try {
+            soundHandler = new SoundHandler("/com/example/javafxshell/sounds/click.wav"); // Assuming the audio file path
             loadImages();
-
             setupHoverEffect(ulsterImageView, ulsterCoAImageView, "Ulster");
             setupHoverEffect(munsterImageView, munsterCoAImageView, "Munster");
             setupHoverEffect(leinsterImageView, leinsterCoAImageView, "Leinster");
@@ -49,13 +54,18 @@ public class HelloController {
         }
     }
 
-    private Image loadImage(String fileName) throws MalformedURLException {
-        File file = new File("C:\\Users\\darra\\Desktop\\" + fileName);
-        String localUrl = file.toURI().toURL().toString();
-        return new Image(localUrl);
+    private Image loadImage(String fileName) {
+        String path = "/com/example/javafxshell/images/Main/" + fileName;
+        URL url = getClass().getResource(path);
+        if (url == null) {
+            throw new IllegalArgumentException("Resource not found: " + path);
+        }
+        return new Image(url.toString());
     }
 
     private void setupHoverEffect(ImageView imageView, ImageView coaImageView, String province) {
+        soundHandler.setupHoverSoundEffectForImage(imageView);  // Set up hover sound effect
+
         imageView.setOnMouseEntered(event -> {
             imageView.setEffect(highlightEffect);
             coaImageView.setVisible(true);
@@ -67,7 +77,17 @@ public class HelloController {
         if (province.equals("Connacht")) {
             imageView.setOnMouseClicked(event -> showConnachtMenu());
         }
+        if (province.equals("Munster")) {
+            imageView.setOnMouseClicked(event -> showMunsterMenu());
+        }
+        if (province.equals("Leinster")) {
+            imageView.setOnMouseClicked(event -> showLeinsterMenu());
+        }
+        if (province.equals("Ulster")) {
+            imageView.setOnMouseClicked(event -> showUlsterMenu());
+        }
     }
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -77,6 +97,8 @@ public class HelloController {
             if (stage != null) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("connachtMenu.fxml"));
                 Parent root = loader.load();
+                ConnachtMenuController connachtMenuController = loader.getController();
+                connachtMenuController.setApplication(application); // Pass the application instance
                 stage.setScene(new Scene(root));
             } else {
                 System.err.println("Stage is null");
@@ -87,8 +109,51 @@ public class HelloController {
     }
 
 
-
-
+    private void showMunsterMenu() {
+        try {
+            if (stage != null) {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("munsterMenu.fxml"));
+                Parent root = loader.load();
+                MunsterMenuController munsterMenuController = loader.getController();
+                munsterMenuController.setApplication(application); // Pass the application instance
+                stage.setScene(new Scene(root));
+            } else {
+                System.err.println("Stage is null");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void showLeinsterMenu() {
+        try {
+            if (stage != null) {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("leinsterMenu.fxml"));
+                Parent root = loader.load();
+                LeinsterMenuController leinsterMenuController = loader.getController();
+                leinsterMenuController.setApplication(application); // Pass the application instance
+                stage.setScene(new Scene(root));
+            } else {
+                System.err.println("Stage is null");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void showUlsterMenu() {
+        try {
+            if (stage != null) {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("ulsterMenu.fxml"));
+                Parent root = loader.load();
+                UlsterMenuController ulsterMenuController = loader.getController();
+                ulsterMenuController.setApplication(application); // Pass the application instance
+                stage.setScene(new Scene(root));
+            } else {
+                System.err.println("Stage is null");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     private void loadImages() throws MalformedURLException {
         ulsterImageView.setImage(loadImage("Ulster.png"));
@@ -106,4 +171,6 @@ public class HelloController {
         leinsterCoAImageView.setVisible(false);
         connachtCoAImageView.setVisible(false);
     }
+
+
 }

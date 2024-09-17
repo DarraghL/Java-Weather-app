@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<StackPane prefHeight="869.0" prefWidth="1380.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Leinster.OffalyMenuController">
+    <children>
+        <ImageView fx:id="backButtonImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5" translateX="-600.0" translateY="350.0" />
+        <Label fx:id="weatherLabel" textFill="WHITE" translateX="-50.0" translateY="-0.0" wrapText="true">
+            <font>
+                <Font size="25.0" />
+            </font>
+            <style>
+                -fx-line-spacing: 10;
+            </style>
+        </Label>
+    </children>
+</StackPane>

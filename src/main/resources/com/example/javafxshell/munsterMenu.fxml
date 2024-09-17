@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<?import javafx.scene.control.Button?>
+<StackPane prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.MunsterMenuController">
 
-</AnchorPane>
+    <ImageView fx:id="corkImageView">
+        <image>
+            <Image url="@images/Munster/Cork.png" />
+        </image></ImageView>
+    <ImageView fx:id="clareImageView">
+        <image>
+            <Image url="@images/Munster/Clare.png" />
+        </image></ImageView>
+    <ImageView fx:id="kerryImageView">
+        <image>
+            <Image url="@images/Munster/Kerry.png" />
+        </image></ImageView>
+    <ImageView fx:id="limerickImageView">
+        <image>
+            <Image url="@images/Munster/Limerick.png" />
+        </image></ImageView>
+    <ImageView fx:id="tipperaryImageView">
+        <image>
+            <Image url="@images/Munster/Tipperary.png" />
+        </image></ImageView>
+    <ImageView fx:id="waterfordImageView">
+        <image>
+            <Image url="@images/Munster/Waterford.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="corkButton">
+        <image>
+            <Image url="@images/Munster/CorkButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="clareButton">
+        <image>
+            <Image url="@images/Munster/ClareButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="kerryButton">
+        <image>
+            <Image url="@images/Munster/KerryButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="limerickButton">
+        <image>
+            <Image url="@images/Munster/LimerickButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="tipperaryButton">
+        <image>
+            <Image url="@images/Munster/TipperaryButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="waterfordButton">
+        <image>
+            <Image url="@images/Munster/WaterfordButton.png" />
+        </image></ImageView>
+
+    <ImageView fx:id="backButtonImageView" pickOnBounds="true" preserveRatio="true" scaleX="0.25" scaleY="0.25" scaleZ="0.25" translateX="-600.0" translateY="350.0">
+        <image>
+            <Image url="@images/Munster/BackButton.png" />
+        </image>
+    </ImageView>
+
+</StackPane>

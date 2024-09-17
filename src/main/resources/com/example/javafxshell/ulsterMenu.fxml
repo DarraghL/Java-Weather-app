@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<StackPane prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.UlsterMenuController">
 
-</AnchorPane>
+    <ImageView fx:id="antrimImageView">
+        <image>
+            <Image url="@images/Ulster/Antrim.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="armaghImageView">
+        <image>
+            <Image url="@images/Ulster/Armagh.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="downImageView">
+        <image>
+            <Image url="@images/Ulster/Down.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="fermanaghImageView">
+        <image>
+            <Image url="@images/Ulster/Fermanagh.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="derryImageView">
+        <image>
+            <Image url="@images/Ulster/Derry.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="cavanImageView">
+        <image>
+            <Image url="@images/Ulster/Cavan.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="donegalImageView">
+        <image>
+            <Image url="@images/Ulster/Donegal.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="tyroneImageView">
+        <image>
+            <Image url="@images/Ulster/Tyrone.png" />
+        </image>
+        </ImageView>
+<ImageView fx:id="monaghanImageView">
+<image>
+    <Image url="@images/Ulster/Monaghan.png" />
+</image>
+</ImageView>
+
+
+
+
+    <ImageView fx:id="antrimButton">
+        <image>
+            <Image url="@images/Ulster/AntrimButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="armaghButton">
+        <image>
+            <Image url="@images/Ulster/ArmaghButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="cavanButton">
+        <image>
+            <Image url="@images/Ulster/CavanButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="derryButton">
+        <image>
+            <Image url="@images/Ulster/DerryButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="downButton">
+        <image>
+            <Image url="@images/Ulster/DownButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="donegalButton">
+        <image>
+            <Image url="@images/Ulster/DonegalButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="fermanaghButton">
+        <image>
+            <Image url="@images/Ulster/FermanaghButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="monaghanButton">
+        <image>
+            <Image url="@images/Ulster/MonaghanButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="tyroneButton">
+        <image>
+            <Image url="@images/Ulster/TyroneButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="backButtonImageView" pickOnBounds="true" preserveRatio="true" scaleX="0.25" scaleY="0.25" scaleZ="0.25" translateX="-600.0" translateY="350.0">
+        <image>
+            <Image url="@images/Ulster/BackButton.png" />
+        </image>
+    </ImageView>
+
+
+</StackPane>

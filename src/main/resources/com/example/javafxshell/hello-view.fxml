@@ -6,38 +6,39 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane prefHeight="869.0" prefWidth="1380.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.HelloController">
+<?import javafx.scene.control.Button?>
+<StackPane prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.HelloController">
     <ImageView fx:id="ulsterImageView" fitHeight="869" fitWidth="707">
         <image>
-            <Image url="@../../../../../../../../Ulster.png" />
+            <Image url="@images/Main/Ulster.png" />
         </image></ImageView>
     <ImageView fx:id="munsterImageView" fitHeight="869" fitWidth="707">
         <image>
-            <Image url="@../../../../../../../../Munster.png" />
+            <Image url="@images/Main/Munster.png" />
         </image></ImageView>
     <ImageView fx:id="leinsterImageView" fitHeight="869" fitWidth="707">
         <image>
-            <Image url="@../../../../../../../../Leinster.png" />
+            <Image url="@images/Main/Leinster.png" />
         </image></ImageView>
     <ImageView fx:id="connachtImageView" fitHeight="869" fitWidth="707">
         <image>
-            <Image url="@../../../../../../../../Connacht.png" />
+            <Image url="@images/Main/Connacht.png" />
         </image></ImageView>
     <ImageView fx:id="ulsterCoAImageView" fitHeight="200.0" fitWidth="200.0" translateX="490.0" translateY="-312.0">
         <image>
-            <Image url="@../../../../../../../../UlsterCoA.png" />
+            <Image url="@images/Main/UlsterCoA.png" />
         </image></ImageView>
     <ImageView fx:id="munsterCoAImageView" fitHeight="200.0" fitWidth="200.0" translateX="-448.0" translateY="300.0">
         <image>
-            <Image url="@../../../../../../../../MunsterCoA.png" />
+            <Image url="@images/Main/MunsterCoA.png" />
         </image></ImageView>
     <ImageView fx:id="leinsterCoAImageView" fitHeight="200.0" fitWidth="200.0" translateX="400.0" translateY="100.0">
         <image>
-            <Image url="@../../../../../../../../LeinsterCoA.png" />
+            <Image url="@images/Main/LeinsterCoA.png" />
         </image></ImageView>
     <ImageView fx:id="connachtCoAImageView" fitHeight="223.0" fitWidth="202.0" translateX="-430.0" translateY="-108.0">
         <image>
-            <Image url="@../../../../../../../../ConnachtCoA.png" />
+            <Image url="@images/Main/ConnachtCoA.png" />
         </image></ImageView>
 
     <Label fx:id="weatherLabel" prefHeight="125.0" prefWidth="446.0" text="What's the weather like in: " textFill="WHITE" translateX="-427.0" translateY="-357.0" translateZ="0.0" wrapText="true">
@@ -45,5 +46,6 @@
             <Font name="Georgia Bold" size="30.0" />
         </font>
     </Label>
+
 
 </StackPane>

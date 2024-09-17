@@ -1,14 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<StackPane prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #101820;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxshell.LeinsterMenuController">
 
-</AnchorPane>
+    <ImageView fx:id="dublinImageView">
+        <image>
+            <Image url="@images/Leinster/Dublin.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="kildareImageView">
+        <image>
+            <Image url="@images/Leinster/Kildare.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="kilkennyImageView">
+        <image>
+            <Image url="@images/Leinster/Kilkenny.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="laoisImageView">
+        <image>
+            <Image url="@images/Leinster/Laois.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="longfordImageView">
+        <image>
+            <Image url="@images/Leinster/Longford.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="louthImageView">
+        <image>
+            <Image url="@images/Leinster/Louth.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="meathImageView">
+        <image>
+            <Image url="@images/Leinster/Meath.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="offalyImageView">
+        <image>
+            <Image url="@images/Leinster/Offaly.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="westmeathImageView">
+        <image>
+            <Image url="@images/Leinster/Westmeath.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="wexfordImageView">
+        <image>
+            <Image url="@images/Leinster/Wexford.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="wicklowImageView">
+        <image>
+            <Image url="@images/Leinster/Wicklow.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="carlowImageView">
+        <image>
+            <Image url="@images/Leinster/Carlow.png" />
+        </image>
+    </ImageView>
+
+
+    <ImageView fx:id="dublinButton">
+        <image>
+            <Image url="@images/Leinster/DublinButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="wicklowButton">
+        <image>
+            <Image url="@images/Leinster/WicklowButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="wexfordButton">
+        <image>
+            <Image url="@images/Leinster/WexfordButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="kildareButton">
+        <image>
+            <Image url="@images/Leinster/KildareButton.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="kilkennyButton">
+        <image>
+            <Image url="@images/Leinster/KilkennyButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="laoisButton">
+        <image>
+            <Image url="@images/Leinster/LaoisButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="longfordButton">
+        <image>
+            <Image url="@images/Leinster/LongfordButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="louthButton">
+        <image>
+            <Image url="@images/Leinster/LouthButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="meathButton">
+        <image>
+            <Image url="@images/Leinster/MeathButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="offalyButton">
+        <image>
+            <Image url="@images/Leinster/OffalyButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="westmeathButton">
+        <image>
+            <Image url="@images/Leinster/WestmeathButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="carlowButton">
+        <image>
+            <Image url="@images/Leinster/CarlowButton.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="backButtonImageView"
+               pickOnBounds="true"
+               preserveRatio="true"
+               scaleX="0.25" scaleY="0.25" scaleZ="0.25"
+               translateX="-600.0" translateY="350.0">
+        <image>
+            <Image url="@images/Leinster/BackButton.png" />
+        </image>
+    </ImageView>
+
+
+
+</StackPane>
