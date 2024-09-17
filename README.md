@@ -30,8 +30,9 @@ To run the Java Weather App, follow these steps:
 
 3. Compile and run the project:
    mvn clean javafx:run
-   If you encounter the "JavaFX runtime components are missing" error, use this command instead:
-   java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -jar target/JavaFXShell-1.0-SNAPSHOT.jar
+   
+If you encounter the "JavaFX runtime components are missing" error, use this command instead:
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -jar target/JavaFXShell-1.0-SNAPSHOT.jar
    
   
    
