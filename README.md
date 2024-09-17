@@ -23,12 +23,15 @@ To install the Java Weather App, follow these steps:
 
 To run the Java Weather App, follow these steps:
 
-1. Compile the project:
-   mvn compile
-   
-3. Run the application:
-   mvn javafx:run
+1. Ensure you have the JavaFX SDK installed. You can download it from [OpenJFX](https://openjfx.io/).
 
+2. Set the PATH_TO_FX environment variable to point to your JavaFX SDK lib directory:
+   Replace `/path/to/javafx-sdk-21` with the actual path to your JavaFX SDK.
+
+3. Compile and run the project:
+   mvn clean javafx:run
+   If you encounter the "JavaFX runtime components are missing" error, use this command instead:
+   java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -jar target/JavaFXShell-1.0-SNAPSHOT.jar
    
   
    
